@@ -1,7 +1,8 @@
-export const metadata = {
-    title:"About Next js routing",
-    description:"This the page that helps in finding a used about me page"
-}
-export default function About(){
-    return <h1>About me!</h1>
-}
+export default async function About() {
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        resolve("");
+      }, 5*1000);
+    });
+    return <h1>about page</h1>;
+  }
